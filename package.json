@@ -1,27 +1,56 @@
 {
-    "name": "the-module",
+    "name": "pegg",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "FFMpeg with auto installation and a fluent api.",
+    "repository": "https://github.com/Richienb/pegg.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
     "files": [
         "index.js",
-        "index.d.ts"
+        "index.d.ts",
+        "utils/**/*",
+        "lib/**/*"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=8.3"
     },
     "scripts": {
         "lint": "eslint .",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
-    "dependencies": {},
+    "keywords": [
+        "ffmpeg",
+        "ffprobe",
+        "ffbinaries",
+        "fluent-ffmpeg",
+        "automatic",
+        "command"
+    ],
+    "dependencies": {
+        "@octokit/rest": "^16.34.1",
+        "bluebird": "^3.7.1",
+        "clean-semver": "^1.0.0",
+        "conf": "^6.2.0",
+        "debug": "^4.1.1",
+        "download": "^7.1.0",
+        "ergent": "^1.0.1",
+        "every-ready": "^1.0.0",
+        "execa": "^3.2.0",
+        "ffbinaries": "^1.1.4",
+        "fluent-ffmpeg": "^2.1.2",
+        "fs-extra": "^8.1.0",
+        "globby": "^10.0.1",
+        "is-windows": "^1.0.2",
+        "latest-semver": "^2.0.0",
+        "lodash": "^4.17.15",
+        "pkg-temp": "^1.1.1",
+        "semver": "^6.3.0",
+        "to-bluebird": "^1.0.2"
+    },
     "devDependencies": {
-        "ava": "^2.1.0",
-        "eslint": "^6.5.1",
+        "ava": "^2.4.0",
+        "eslint": "^6.6.0",
         "eslint-config-richienb": "^0.2.2"
     },
     "eslintConfig": {

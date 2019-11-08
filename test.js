@@ -1,13 +1,12 @@
 import test from "ava"
-import theModule from "."
+import pegg from "."
 
-test("main", (t) => {
-    t.throws(() => {
-        theModule(123)
-    }, {
-        instanceOf: TypeError,
-        message: "Expected a string, got number",
-    })
-
-    t.is(theModule("unicorns"), "unicorns & rainbows")
+test("main", async (t) => {
+    t.truthy(pegg.ffmpeg)
+    t.truthy(pegg.exec)
+    t.truthy(pegg.toPromise)
+    t.truthy(pegg.ready)
+    t.truthy(pegg.paths)
+    t.true((await pegg.exec("ffmpeg", ["--help"])).stderr.startsWith("ffmpeg"))
+    t.true(await pegg.ready().then(() => true))
 })
