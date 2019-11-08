@@ -1,6 +1,6 @@
 {
     "name": "pegg",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "FFMpeg with auto installation and a fluent api.",
     "repository": "https://github.com/Richienb/pegg.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
@@ -35,7 +35,7 @@
         "debug": "^4.1.1",
         "download": "^7.1.0",
         "ergent": "^1.0.1",
-        "every-ready": "^1.0.0",
+        "every-ready": "^1.0.1",
         "execa": "^3.2.0",
         "ffbinaries": "^1.1.4",
         "fluent-ffmpeg": "^2.1.2",
