@@ -55,6 +55,10 @@ The commandline arguments to use.
 
 Returns a promise that will resolve with the paths to the binaries that pegg uses.
 
+#### prepare()
+
+Prepare pegg by downloading the required binaries if needed. This promise is automatically run for all other functions.
+
 ## Upgrading from v1
 
 - Removed `.when`. Pegg will now automatically ensure readiness when calling any other functions.

@@ -32,15 +32,13 @@ const prepare = onetime(async () => {
         process.env.FLVMETA_PATH = newflvmeta
     }
 
-    if (isLater(latestVersion, conf.get("FFmpegVersion") || "0.0.0") || !ffmpeg || !ffprobe) {
-        await downloadBinaries(latestVersion)
+    if (isLater(latestVersion, conf.get("FFmpegVersion") || "0.0.0") || !ffmpeg || !ffprobe) await downloadBinaries(latestVersion)
 
-        const { ffmpeg: newffmpeg, ffprobe: newffprobe } = await getBinaryPaths()
-        fluentFFmpeg.setFfmpegPath(newffmpeg)
-        fluentFFmpeg.setFfprobePath(newffprobe)
-        process.env.FFMPEG_PATH = ffmpeg
-        process.env.FFPROBE_PATH = ffprobe
-    }
+    const { ffmpeg: newffmpeg, ffprobe: newffprobe } = await getBinaryPaths()
+    fluentFFmpeg.setFfmpegPath(newffmpeg)
+    fluentFFmpeg.setFfprobePath(newffprobe)
+    process.env.FFMPEG_PATH = ffmpeg
+    process.env.FFPROBE_PATH = ffprobe
 })
 
 module.exports = {
@@ -60,6 +58,7 @@ module.exports = {
         await prepare()
         return getBinaryPaths(...args)
     },
+    prepare,
 }
 
 // Hello Curry & Angzh
