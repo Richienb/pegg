@@ -61,7 +61,7 @@ Prepare pegg by downloading the required binaries if needed. This promise is aut
 
 ## Upgrading from v1
 
-- Removed `.when`. Pegg will now automatically ensure readiness when calling any other functions.
+- Removed `when`. Pegg will now automatically ensure readiness when calling any other functions.
 - `paths` has been replaced with `getBinaryPaths`.
 - `exec` now only works for `ffmpeg` and assumes each function argument as part of the command.
 - `ffmpeg` now returns a promise which will resolve to the fluent ffmpeg object.
