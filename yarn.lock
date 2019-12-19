@@ -1067,11 +1067,11 @@ clean-regexp@^1.0.0:
     escape-string-regexp "^1.0.5"
 
 clean-semver@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/clean-semver/-/clean-semver-1.0.0.tgz#954fc3cca0af9aba453683ba6d301420d39e1ced"
-  integrity sha512-zAJa4dH4QYu/Tmu4qQb46t09A44QJuRzoQWvHA+GXZjZnBqr/J7RI2u6HrVXQPC/GlY5MSrh2d2pnDlWQsMilA==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/clean-semver/-/clean-semver-1.0.1.tgz#2e0be04f20fd501f04155705db1c68cc1ba28f89"
+  integrity sha512-YUolonZymu7el7OfGoHO2bYuyemgi0ujhNzwL2ciYysvxMSf9X1JlPZMrhD9LZGJwuKHrz0HdXS0hjsRMz4O7w==
   dependencies:
-    semver "^6.3.0"
+    semver "^7.1.1"
 
 clean-stack@^2.0.0, clean-stack@^2.2.0:
   version "2.2.0"
