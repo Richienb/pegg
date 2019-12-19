@@ -11,13 +11,13 @@ declare const Pegg: {
     /**
      * The [Fluent FFMpeg](https://www.npmjs.com/package/fluent-ffmpeg) object to use.
     */
-    ffmpeg: Promise<typeof Ffmpeg>;
+    ffmpeg(): Promise<typeof Ffmpeg>;
 
     /**
      * Convert the [Fluent FFMpeg](https://www.npmjs.com/package/fluent-ffmpeg) object to use a Promise.
      * @param fluentFFmpegObj The object to convert.
     */
-    toPromise: (fluentFFmpegObj: typeof Ffmpeg.FfmpegCommand) => Promise<void>;
+    toPromise(fluentFFmpegObj: typeof Ffmpeg.FfmpegCommand): Promise<void>;
 
     /**
      * Execute the `ffmpeg` binary with raw commandline input.
@@ -28,7 +28,7 @@ declare const Pegg: {
     /**
      * Returns a promise that will resolve with the paths to the binaries that pegg uses.
     */
-    getBinaryPaths: () => Promise<Paths>
+    getBinaryPaths(): Promise<Paths>
 
     /**
      * Prepare pegg by downloading the required binaries if needed. This promise is automatically run for all other functions.
