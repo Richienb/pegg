@@ -16,7 +16,7 @@
         "node": ">=8.3"
     },
     "scripts": {
-        "lint": "eslint .",
+        "lint": "xo",
         "test": "yarn lint && ava"
     },
     "keywords": [
@@ -29,31 +29,28 @@
     ],
     "dependencies": {
         "@octokit/rest": "^16.34.1",
-        "bluebird": "^3.7.1",
         "clean-semver": "^1.0.0",
         "conf": "^6.2.0",
-        "debug": "^4.1.1",
         "download": "^7.1.0",
         "ergent": "^1.0.1",
-        "every-ready": "^1.0.1",
         "execa": "^3.2.0",
-        "ffbinaries": "^1.1.4",
+        "ffbinaries-extra": "^1.1.1",
         "fluent-ffmpeg": "^2.1.2",
-        "fs-extra": "^8.1.0",
         "globby": "^10.0.1",
+        "is-later": "^1.0.0",
         "is-windows": "^1.0.2",
-        "latest-semver": "^2.0.0",
-        "lodash": "^4.17.15",
-        "pkg-temp": "^1.1.1",
-        "semver": "^7.0.0",
-        "to-bluebird": "^1.0.2"
+        "onetime": "^5.1.0",
+        "pkg-temp": "^1.1.1"
     },
     "devDependencies": {
         "ava": "^2.4.0",
-        "eslint": "^6.6.0",
-        "eslint-config-richienb": "^0.2.2"
+        "eslint-config-richienb": "^0.2.3",
+        "xo": "^0.25.3"
     },
-    "eslintConfig": {
+    "resolutions": {
+        "eslint": "^6.7.2"
+    },
+    "xo": {
         "extends": "richienb/node"
     }
 }
