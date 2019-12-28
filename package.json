@@ -19,7 +19,7 @@
     "scripts": {
         "lint": "xo",
         "test": "yarn lint && ava",
-        "postinstall": "scripts/install.js"
+        "postinstall": "node scripts/install.js"
     },
     "keywords": [
         "ffmpeg",
