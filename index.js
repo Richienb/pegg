@@ -5,9 +5,9 @@ const execa = require("execa")
 
 const getBinaryPaths = require("./lib/get-binary-paths")
 
-const { ffmpeg: newffmpeg, ffprobe: newffprobe } = getBinaryPaths()
-fluentFFmpeg.setFfmpegPath(newffmpeg)
-fluentFFmpeg.setFfprobePath(newffprobe)
+const { ffmpeg, ffprobe } = getBinaryPaths()
+fluentFFmpeg.setFfmpegPath(ffmpeg)
+fluentFFmpeg.setFfprobePath(ffprobe)
 process.env.FFMPEG_PATH = ffmpeg
 process.env.FFPROBE_PATH = ffprobe
 
