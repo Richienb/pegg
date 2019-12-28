@@ -10,7 +10,8 @@
         "index.js",
         "index.d.ts",
         "utils/**/*",
-        "lib/**/*"
+        "lib/**/*",
+        "scripts/**/*"
     ],
     "engines": {
         "node": ">=8.3"
