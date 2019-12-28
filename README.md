@@ -16,8 +16,7 @@ npm install pegg
 const pegg = require("pegg");
 
 (async () => {
-    const ffmpeg = await pegg.ffmpeg();
-    ffmpeg("/path/to/file.avi"); // See https://www.npmjs.com/package/fluent-ffmpeg
+    pegg.ffmpeg("/path/to/file.avi"); // See https://www.npmjs.com/package/fluent-ffmpeg
 })();
 ```
 
@@ -51,13 +50,16 @@ Type: `...string`
 
 The commandline arguments to use.
 
-#### getBinaryPaths()
+#### paths
 
-Returns a promise that will resolve with the paths to the binaries that pegg uses.
+The paths to the binaries that pegg uses.
 
-#### prepare()
+## Upgrading from v2
 
-Prepare pegg by downloading the required binaries if needed. This promise is automatically run on install and when calling all other functions.
+- All functions are no longer behind a promise.
+- `getBinaryPaths()` is now `paths`.
+- Removed prepare. A functional equalivent is automatically run on install.
+- Pegg now downloads the binaries to the appdata folder under the `pegg-nodejs` subfolder to prevent the need to redownload the binaries due to clearing the temp directory.
 
 ## Upgrading from v1
 
