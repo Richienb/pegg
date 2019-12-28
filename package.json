@@ -1,6 +1,6 @@
 {
     "name": "pegg",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "FFMpeg with auto installation and a fluent api.",
     "repository": "https://github.com/Richienb/pegg.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
