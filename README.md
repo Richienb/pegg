@@ -57,7 +57,7 @@ Returns a promise that will resolve with the paths to the binaries that pegg use
 
 #### prepare()
 
-Prepare pegg by downloading the required binaries if needed. This promise is automatically run for all other functions.
+Prepare pegg by downloading the required binaries if needed. This promise is automatically run on install and when calling all other functions.
 
 ## Upgrading from v1
 
