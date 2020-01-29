@@ -36,7 +36,7 @@
         "conf": "^6.2.0",
         "download": "^7.1.0",
         "ergent": "^1.0.1",
-        "execa": "^3.4.0",
+        "execa": "^4.0.0",
         "ffbinaries-extra": "^1.1.1",
         "fluent-ffmpeg": "^2.1.2",
         "globby": "^10.0.1",
