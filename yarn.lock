@@ -375,9 +375,9 @@
     universal-user-agent "^4.0.0"
 
 "@octokit/rest@^16.34.1":
-  version "16.40.0"
-  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.40.0.tgz#a2b5dee3486aee5543a92f2a3bdb2ed391229e8c"
-  integrity sha512-owk1H7XRSGrs9aE+phHuwYLuECSOBmanUNLBTb6VzMHELm9bZwvyK3US7SnVHxlmnlFUf1n7U/n0G/1PccSH/Q==
+  version "16.40.2"
+  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.40.2.tgz#f32ecb96d4cfadd3ab8fbfeb91a6018368d03956"
+  integrity sha512-6JYp+VQOPGYBPbpVA+rat0VWMLACjbWz4iwpbpcTeXQj8SlxZRErUcRk7hvUNK5swyf2GHAwKG6Kpl3xdYxVrA==
   dependencies:
     "@octokit/auth-token" "^2.4.0"
     "@octokit/plugin-paginate-rest" "^1.1.1"
