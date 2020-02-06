@@ -1707,11 +1707,11 @@ equal-length@^1.0.0:
   integrity sha1-IcoRLUirJLTh5//A5TOdMf38J0w=
 
 ergent@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ergent/-/ergent-1.0.1.tgz#992dc5bb779c78132b876072cfeec03478be4e28"
-  integrity sha512-C1hY6jy3DKXOKI4ggEh+PrTkaAKw37CzFu/wVNNZupNK8H8DbUhGa8fDvycYflknqhHi24L1v6ik5om8QFE59w==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/ergent/-/ergent-1.1.0.tgz#b5625ca5e894f819eaeba26d60fab889fd3c8be4"
+  integrity sha512-PotMK6byWEGwFU62kQTvrQypg4iAhsXPRWoNuLvnDJhOWMpz5H6MHRto23JeFigt48JLtGAZnEgk8yqwLwaSWg==
   dependencies:
-    clean-semver "^1.0.0"
+    clean-semver "^1.0.1"
     pname "^1.0.0"
     read-pkg "^5.2.0"
     universal-user-agent "^4.0.0"
